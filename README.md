@@ -13,13 +13,13 @@ To execute the script, simply run the batch file:
 ```cmd
 cd /d "C:\Program Files (x86)\Eziriz\.NET Reactor"
 
-dotNET_reactor.exe -file "Path\To\Api.dll" -antitamp 1 -control_flow_obfuscation 1 -flow_level 9 -necrobit 1 -resourceencryption 1 -stringencryption 1 -obfuscation 1 -incremental_obfuscation 1 -resourcecompression 1 
+dotNET_reactor.exe -file "Path\To\App.dll" -antitamp 1 -control_flow_obfuscation 1 -flow_level 9 -necrobit 1 -resourceencryption 1 -stringencryption 1 -obfuscation 1 -incremental_obfuscation 1 -resourcecompression 1 
 
 timeout /t 3 /nobreak
 
-copy /Y "Path\To\API_Secure\Api.dll" "Path\To\Api.dll"
+copy /Y "Path\To\API_Secure\App.dll" "Path\To\App.dll"
 
-rmdir /s /q "Path\To\API_Secure"
+rmdir /s /q "Path\To\APP_Secure"
 ```
 
 Make sure to replace `Path\To\Api.dll` and `Path\To\API_Secure` with the actual paths where your DLL is located and where you want the protected version to be stored.
