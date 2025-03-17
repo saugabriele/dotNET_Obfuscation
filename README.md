@@ -130,25 +130,6 @@ This script automates the protection of .NET assemblies using **.NET Reactor**, 
 
 # Eazfuscator.NET Code Obfuscation
 
-## Table of Contents
-- [Overview](#overview)
-- [Installation](#installation)
-- [Usage Instructions](#usage-instructions)
-  - [Navigate to Your Application Directory](#step-1-navigate-to-your-application-directory)
-  - [Execute the Obfuscation Command](#step-2-execute-the-obfuscation-command)
-- [Features and Functionalities](#features-and-functionalities)
-  - [Symbols Renaming](#symbols-renaming)
-  - [String Encryption and Compression](#string-encryption-and-compression)
-  - [Code and Data Virtualization](#code-and-data-virtualization)
-  - [Homomorphic Encryption](#homomorphic-encryption)
-  - [Automatic Code Optimization](#automatic-code-optimization)
-  - [Resource Encryption and Compression](#resource-encryption-and-compression)
-  - [Code Control Flow Obfuscation](#code-control-flow-obfuscation)
-  - [Assemblies Merging and Embedding](#assemblies-merging-and-embedding)
-  - [XML Documentation Filter](#xml-documentation-filter)
-  - [Debugging Support](#debugging-support)
-- [Conclusion](#conclusion)
-
 ## Overview
 Eazfuscator.NET is a powerful obfuscation tool designed to protect .NET applications from reverse engineering. This README provides instructions on how to use Eazfuscator.NET to obfuscate your code and details the various security features it applies.
 
