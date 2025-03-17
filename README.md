@@ -127,3 +127,73 @@ Encrypts string literals to prevent easy extraction of sensitive data from the a
 
 This script automates the protection of .NET assemblies using **.NET Reactor**, making it harder for attackers to decompile, modify, or reverse-engineer your application. 🚀
 
+
+Eazfuscator.NET Code Obfuscation
+
+Overview
+
+This README file explains how to obfuscate your code using Eazfuscator.NET. The obfuscation process is designed to protect your application from reverse engineering by making it harder for attackers to understand or extract sensitive information. The provided commands and the functionalities of Eazfuscator.NET are outlined below.
+
+Commands to Obfuscate Your Code
+
+Step 1: Navigate to Your Application Directory
+
+To begin the obfuscation process, first navigate to the directory of your application using the following command:
+
+cd "Path/To/App"
+
+Replace "Path/To/App" with the actual path to the directory containing your application.
+
+Step 2: Execute the Obfuscation Command
+
+Once you are in the application directory, run the following command to obfuscate your application's DLL:
+
+eazfuscator.net "Path\To\App\App.dll"
+
+Replace "Path\To\App\App.dll" with the actual path to the DLL file you wish to obfuscate. This command will obfuscate the provided DLL and apply several protection techniques to make your code more secure.
+
+Functionalities Performed by Eazfuscator.NET
+
+1. Symbols Renaming
+
+Symbols, such as function names, variables, and class names, are crucial for understanding a program's structure. Eazfuscator.NET renames these symbols to meaningless names, making it difficult for an attacker to understand the functionality of the code. This simple yet effective technique helps protect your intellectual property by obfuscating the meaning of the symbols in the code.
+
+2. String Encryption and Compression
+
+Strings in your code can expose sensitive information about the program's inner workings. Eazfuscator.NET encrypts and compresses these strings during the obfuscation process. At runtime, these encrypted strings are decrypted, ensuring that the information remains protected. Additionally, string compression reduces the size of the assembly, making it more efficient.
+
+3. Code and Data Virtualization
+
+For more sensitive sections of your code, Eazfuscator.NET uses code and data virtualization. This technique transforms your .NET bytecode into a custom, unrecognizable sequence of byte instructions. The transformed code still functions as expected at runtime but appears as a random sequence, making it much more difficult for attackers to reverse-engineer the program. Every time you obfuscate your program, a new custom virtual machine is created, adding another layer of protection.
+
+4. Homomorphic Encryption
+
+Eazfuscator.NET integrates homomorphic encryption in conjunction with virtualization to secure specific parts of your code. Homomorphic encryption allows computations to be performed on encrypted data without decrypting it. This makes the protected circuits of your program completely intangible to attackers, providing a high level of security for sensitive code sections.
+
+5. Automatic Code Optimization
+
+Eazfuscator.NET automatically optimizes your code for better performance. This optimization helps improve the efficiency of your program, eliminating the need for you to manually tweak the code for performance. The obfuscator performs the optimization behind the scenes, allowing you to focus on functionality rather than performance concerns.
+
+6. Resource Encryption and Compression
+
+If your application includes resources such as images, sounds, or other assets, these may contain sensitive information. Eazfuscator.NET allows you to encrypt and compress these resources, protecting them from unauthorized access. This feature is particularly useful if your program contains private keys or proprietary assets that need to be safeguarded.
+
+7. Code Control Flow Obfuscation
+
+To further obfuscate the code, Eazfuscator.NET applies control flow obfuscation. This technique alters the control flow of the program by replacing equivalent instructions with functionally different but syntactically equivalent ones. This makes it more difficult for decompilers to reverse-engineer the original high-level code, significantly increasing the complexity of understanding and attacking the program.
+
+8. Assemblies Merging and Embedding
+
+Eazfuscator.NET can merge or embed multiple assemblies into a single one. This makes it harder for an attacker to extract individual parts of the program. You can specify which assemblies to merge or embed, and the obfuscator takes care of the process during obfuscation, ensuring that everything is seamlessly integrated.
+
+9. XML Documentation Filter
+
+If your application includes XML documentation files that contain sensitive implementation details, Eazfuscator.NET automatically filters out any potentially revealing information from these files. This ensures that no internal details about private types, methods, or fields are exposed through the documentation.
+
+10. Debugging Support
+
+After obfuscation, your assembly does not become a completely non-debuggable mess. Eazfuscator.NET retains the ability to debug obfuscated code. You can still view readable stack traces, get line numbers for unhandled exceptions, and attach a debugger to your obfuscated code for troubleshooting.
+
+Conclusion
+
+By following the above commands and utilizing Eazfuscator.NET’s powerful obfuscation techniques, you can effectively protect your .NET application from reverse engineering and unauthorized access.
