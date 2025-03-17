@@ -22,7 +22,7 @@ copy /Y "Path\To\API_Secure\App.dll" "Path\To\App.dll"
 rmdir /s /q "Path\To\APP_Secure"
 ```
 
-Make sure to replace `Path\To\Api.dll` and `Path\To\API_Secure` with the actual paths where your DLL is located and where you want the protected version to be stored.
+Make sure to replace `Path\To\App.dll` and `Path\To\APP_Secure` with the actual paths where your DLL is located and where you want the protected version to be stored.
 
 ## Explanation of Parameters
 
