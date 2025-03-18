@@ -114,8 +114,8 @@ Encrypts string literals to prevent easy extraction of sensitive data from the a
 1. Navigates to the **.NET Reactor** installation directory.
 2. Runs the **.NET Reactor** command-line tool with the specified protection options.
 3. Waits a few seconds to ensure the process is completed.
-4. Copies the newly protected DLL from the `API_Secure` folder to the original destination.
-5. Deletes the temporary `API_Secure` folder.
+4. Copies the newly protected DLL from the `APP_Secure` folder to the original destination.
+5. Deletes the temporary `APP_Secure` folder.
 6. Displays a message confirming successful protection.
 
 ## Notes
