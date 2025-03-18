@@ -15,7 +15,7 @@ del /f /q "Path\To\App.pdb"
 
 cd /d "C:\Program Files (x86)\Eziriz\.NET Reactor"
 
-dotNET_reactor.exe -file "Path\To\App.dll" -antitamp 1 -control_flow_obfuscation 1 -flow_level 9 -necrobit 1 -resourceencryption 1 -stringencryption 1 -obfuscation 1 -incremental_obfuscation 1 -resourcecompression 1 &&^
+dotNET_reactor.exe -file "Path\To\App.dll" -antitamp 1 -control_flow_obfuscation 1 -flow_level 9 -necrobit 1 -resourceencryption 1 -stringencryption 1 -obfuscation 1 -incremental_obfuscation 1 -resourcecompression max
 
 timeout /t 10 /nobreak && ^
 copy /Y "Path\To\APP_Secure\App.dll" Path\To\App.dll" && ^
