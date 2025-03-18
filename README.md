@@ -18,8 +18,8 @@ cd /d "C:\Program Files (x86)\Eziriz\.NET Reactor"
 dotNET_reactor.exe -file "Path\To\App.dll" -antitamp 1 -control_flow_obfuscation 1 -flow_level 9 -necrobit 1 -resourceencryption 1 -stringencryption 1 -obfuscation 1 -incremental_obfuscation 1 -resourcecompression 1 &&^
 
 timeout /t 10 /nobreak && ^
-copy /Y "C:\Users\Utente\source\repos\SQLiteDb\SQLiteDb\bin - Copia\Release\net9.0\SQLiteDb_Secure\SQLiteDb.dll" "C:\Users\Utente\source\repos\SQLiteDb\SQLiteDb\bin - Copia\Release\net9.0\SQLiteDb.dll" && ^
-rmdir /s /q "C:\Users\Utente\source\repos\SQLiteDb\SQLiteDb\bin - Copia\Release\net9.0\SQLiteDb_Secure"
+copy /Y "Path\To\APP_Secure\App.dll" Path\To\App.dll" && ^
+rmdir /s /q "Path\To\APP_Secure"
 
 ```
 
