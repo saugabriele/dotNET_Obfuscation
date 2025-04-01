@@ -144,19 +144,19 @@ Run the following command to obfuscate your application's DLL:
 
 ```sh
 # Obfuscate the main application project DLL
-eazfuscator.net --msbuild-project-path "Path\To\App\Project.csproj"
+eazfuscator.net --msbuild-project-path "Path\To\App\Project.csproj" --protect-project
 
 # Obfuscate the Business Logic Layer (BLL) DLL
-eazfuscator.net --msbuild-project-path "Path\To\App\BLL.csproj"
+eazfuscator.net --msbuild-project-path "Path\To\App\BLL.csproj" --protect-project
 
 # Obfuscate the Data Access Layer (DAL) DLL
-eazfuscator.net --msbuild-project-path "Path\To\App\DAL.csproj"
+eazfuscator.net --msbuild-project-path "Path\To\App\DAL.csproj" --protect-project
 
 # Obfuscate the Database Access (DBA) DLL
-eazfuscator.net --msbuild-project-path "Path\To\App\DBA.csproj"
+eazfuscator.net --msbuild-project-path "Path\To\App\DBA.csproj" --protect-project
 
 # Obfuscate the Data Transfer Object (DTO) DLL
-eazfuscator.net --msbuild-project-path "Path\To\App\DTO.csproj"
+eazfuscator.net --msbuild-project-path "Path\To\App\DTO.csproj" --protect-project
 ```
 
 ### Step 2: Publish the Application
