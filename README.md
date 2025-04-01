@@ -139,21 +139,37 @@ Ensure that Eazfuscator.NET is installed on your system before proceeding. You c
 
 ## Usage Instructions
 
-### Step 1: Navigate to Your Application Directory
-Before obfuscating your application, navigate to the directory containing your compiled application:
-
-```sh
-cd "Path/To/App"
-```
-Replace `Path/To/App` with the actual directory path of your application.
-
-### Step 2: Execute the Obfuscation Command
+### Step 1: Execute the Obfuscation Command
 Run the following command to obfuscate your application's DLL:
 
 ```sh
-eazfuscator.net "Path\To\App\App.dll"
+# Obfuscate the main application project DLL
+eazfuscator.net --msbuild-project-path "Path\To\App\Project.csproj"
+
+# Obfuscate the Business Logic Layer (BLL) DLL
+eazfuscator.net --msbuild-project-path "Path\To\App\BLL.csproj"
+
+# Obfuscate the Data Access Layer (DAL) DLL
+eazfuscator.net --msbuild-project-path "Path\To\App\DAL.csproj"
+
+# Obfuscate the Database Access (DBA) DLL
+eazfuscator.net --msbuild-project-path "Path\To\App\DBA.csproj"
+
+# Obfuscate the Data Transfer Object (DTO) DLL
+eazfuscator.net --msbuild-project-path "Path\To\App\DTO.csproj"
 ```
-Replace `Path\To\App\App.dll` with the actual path to the DLL file you wish to obfuscate.
+
+### Step 2: Publish the Application
+Once the obfuscation is completed, navigate to the project directory and publish the application in Release mode using the following command:
+
+```sh
+cd Path/To/Project
+dotnet publish -c Release
+```
+
+### Step 3: Obfuscated DLLs in Release Build
+After running the `dotnet publish -c Release` command, the obfuscated DLLs will be available in the `bin\Release\netX.X\publish` folder. These DLLs will have the obfuscation applied, making the code harder to reverse-engineer. The main project DLL, along with other project DLLs (such as BLL, DAL, DBA, DTO), will also be obfuscated.
+
 
 ## Features and Functionalities
 
