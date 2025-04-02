@@ -11,11 +11,11 @@ This script is used to protect .NET assemblies using **.NET Reactor**. It applie
 To execute the script, simply run the batch file:
 
 ```cmd
-del /f /q "Path\To\App.pdb"
+del /f /q "Path\To\App\*.pdb"
 
 cd /d "C:\Program Files (x86)\Eziriz\.NET Reactor"
 
-dotNET_reactor.exe -file "Path\To\App.dll" -antitamp 1 -control_flow_obfuscation 1 -flow_level 9 -necrobit 1 -resourceencryption 1 -stringencryption 1 -obfuscation 1 -incremental_obfuscation 1 -resourcecompression max
+dotNET_reactor.exe -file "Path\To\App.dll" -files "C:\lib1.dll/C:\lib2.dll/C:\lib3.dll" -antitamp 1 -control_flow_obfuscation 1 -flow_level 9 -necrobit 1 -resourceencryption 1 -stringencryption 1 -obfuscation 1 -incremental_obfuscation 1 -resourcecompression max
 
 timeout /t 10 /nobreak && ^
 copy /Y "Path\To\APP_Secure\App.dll" Path\To\App.dll" && ^
